@@ -1,0 +1,43 @@
+body {
+    background-color: hsl(202, 86%, 94%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+input:focus + span {
+    background-color: rgb(250 204 21);
+    color: black;
+  }
+
+.span-error {
+    color: white !important;
+    background-color: red;
+}
+
+.radio-container:has(#interest-only:checked) {
+    background-color: rgba(255, 255, 0, 0.215);
+}
+
+.radio-container:has(#repayment:checked) {
+    background-color: rgba(255, 255, 0, 0.215);
+}
+
+.right {
+    border-bottom-left-radius: 4rem;
+}
+
+.right img {
+    width: 8rem;
+}
+
+.required input:required,
+.required select:required,
+.required textarea:required {
+    border-color: red;
+}
+
+.required input:required:focus,
+.required select:required:focus,
+.required textarea:required:focus {
+    border-color: red;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
